@@ -22,8 +22,6 @@ def get_books_data(BASE_URL):
 
     save_to_db(books)
 
-    print(books)
-
 
 def save_to_db(books):
     conn = sqlite3.connect("books.db")
