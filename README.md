@@ -8,10 +8,18 @@ Deniss Tsokarev
 
 Description
 -----------
-Script **scrape_books.py** scrapes an [online-bookstore](http://books.toscrape.com) and creates an SQLite database with its data.
+File **scrape_books.py** scrapes an [online-bookstore](http://books.toscrape.com) and creates an **SQLite** database with its data.
 
 Once the database is created, **top10.py** is used to search the database and create data frames for the top 10 books for the following categories:
-"TOP RATED", "BEST PRICE" and "RECOMMENDED". The data frames are then saved in an Excel file.
+*"TOP RATED"*, *"BEST PRICE"* and *"RECOMMENDED"*. The data frames are then saved in an Excel file.
+
+Modules used
+------------
+* [sqlite3](https://docs.python.org/2/library/sqlite3.html)
+* [Requests](https://2.python-requests.org/en/master/)
+* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+* [Pandas](https://pandas.pydata.org/pandas-docs/stable/)
+* [XlsxWriter](https://xlsxwriter.readthedocs.io/)
 
 Outcome
 -------
