@@ -51,8 +51,6 @@ def write_data_to_excel():
 
     with pd.ExcelWriter("books_stats.xlsx", engine="xlsxwriter") as writer:
         recommended_df.to_excel(writer, sheet_name="Top 10", index=False, startrow=1)
-        # top_rated_df.to_excel(writer, sheet_name="Top 10", index=False, startrow=14)
-        # best_price_df.to_excel(writer, sheet_name="Top 10", index=False, startrow=27)
         top_rated_df.to_excel(writer, sheet_name="Top 10", index=False, startrow=1, startcol=4)
         best_price_df.to_excel(writer, sheet_name="Top 10", index=False, startrow=1, startcol=8)
 
